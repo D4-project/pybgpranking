@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'PyProject'
-copyright = '2021, Lookyloo team'
-author = 'Lookyloo team'
+project = 'PyBGPRanking'
+copyright = '2021, D4 team'
+author = 'D4 team'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.0.1'
+release = 'v2.0'
 
 
 # -- General configuration ---------------------------------------------------

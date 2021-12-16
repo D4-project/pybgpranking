@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to PyProject's documentation!
+Welcome to PyBGPRanking's documentation!
 =============================================
 
-This is the client API for `PyProject <https://github.com/Lookyloo/project_template>`_:
+This is the client API for `PyBGPRanking <https://github.com/D4-project/pybgpranking>`_:
 
   foo
 
@@ -16,15 +16,15 @@ Installation
 
 The package is available on PyPi, so you can install it with::
 
-  pip install pyproject
+  pip install pybgpranking
 
 
 Usage
 -----
 
-You can use `client` as a python script::
+You can use `bgpranking` as a python script::
 
-	$ client -h
+	$ bgpranking -h
 
 Or as a library:
 

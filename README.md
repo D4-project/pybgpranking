@@ -1,18 +1,18 @@
-# Python client and module for Project Template
+# Python client and module for BGP Ranking
 
-This is a simple template used in all the web based APIs in this repository, and a few others.
+THis project will make querying BGP Ranking easier.
 
 ## Installation
 
 ```bash
-pip install pyproject
+pip install pybgpranking
 ```
 
 ## Usage
 
 ### Command line
 
-You can use the `client` command to do a thing:
+You can use the `bgpranking` command to query the instance:
 
 ```bash
 ```

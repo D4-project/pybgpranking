@@ -4,11 +4,11 @@ API reference
 .. toctree::
    :maxdepth: 2
 
-.. automodule:: pyproject
+.. automodule:: pybgpranking
    :members:
 
-PyProject
+PyBGPRanking
 ---------
 
-.. autoclass:: PyProject
+.. autoclass:: PyBGPRanking
    :members:

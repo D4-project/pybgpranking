@@ -3,13 +3,13 @@
 
 import unittest
 
-from pyproject import PyProject
+from pybgpranking import PyBGPRanking
 
 
 class TestBasic(unittest.TestCase):
 
     def setUp(self):
-        self.client = PyProject(root_url="http://127.0.0.1:9999")
+        self.client = PyBGPRanking(root_url="https://bgpranking.circl.lu")
 
     def test_up(self):
         self.assertTrue(self.client.is_up)

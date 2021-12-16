@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "pyproject"
-version = "0.0.1"
-description = "Python CLI and module for project"
+name = "pybgpranking"
+version = "2.0"
+description = "Python CLI and module for BGP Ranking"
 authors = ["Raphaël Vinot <raphael.vinot@circl.lu>"]
 license = "BSD-3-Clause"
 
@@ -26,15 +26,16 @@ classifiers = [
 include = ['README.md']
 
 [tool.poetry.scripts]
-client = 'pyproject:main'
+bgpranking = 'pybgpranking:main'
 
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = "^2.26.0"
 Sphinx = { version = "^4.3", optional = true }
+pyipasnhistory = "^2.1"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.910"
+mypy = "^0.920"
 types-requests = "^2.26.0"
 ipython = "^7.29.0"
 pytest = "^6.2.5"
