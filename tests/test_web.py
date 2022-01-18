@@ -3,7 +3,7 @@
 
 import unittest
 
-from pybgpranking import PyBGPRanking
+from pybgpranking2 import PyBGPRanking
 
 
 class TestBasic(unittest.TestCase):
