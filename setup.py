@@ -3,15 +3,15 @@ from setuptools import setup  # type: ignore
 
 
 setup(
-    name='pybgpranking',
+    name='pybgpranking2',
     version='2.1-dev',
     author='Raphaël Vinot',
     author_email='raphael.vinot@circl.lu',
     maintainer='Raphaël Vinot',
     url='https://github.com/D4-project/pybgpranking',
     description='Python client for BGP Ranking',
-    packages=['pybgpranking'],
-    entry_points={"console_scripts": ["bgpranking = pybgpranking:main"]},
+    packages=['pybgpranking2'],
+    entry_points={"console_scripts": ["bgpranking = pybgpranking2:main"]},
     install_requires=['requests'],
     classifiers=[
         'License :: OSI Approved :: BSD License',

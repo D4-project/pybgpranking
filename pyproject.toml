@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pybgpranking"
+name = "pybgpranking2"
 version = "2.0.1"
 description = "Python CLI and module for BGP Ranking"
 authors = ["Raphaël Vinot <raphael.vinot@circl.lu>"]
@@ -26,7 +26,7 @@ classifiers = [
 include = ['README.md']
 
 [tool.poetry.scripts]
-bgpranking = 'pybgpranking:main'
+bgpranking = 'pybgpranking2:main'
 
 [tool.poetry.dependencies]
 python = "^3.8"
