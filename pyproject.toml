@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pybgpranking"
-version = "2.0"
+version = "2.0.1"
 description = "Python CLI and module for BGP Ranking"
 authors = ["Raphaël Vinot <raphael.vinot@circl.lu>"]
 license = "BSD-3-Clause"
@@ -35,9 +35,9 @@ Sphinx = { version = "^4.3", optional = true }
 pyipasnhistory = "^2.1"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.920"
+mypy = "^0.931"
 types-requests = "^2.26.0"
-ipython = "^7.29.0"
+ipython = "^8.0.0"
 pytest = "^6.2.5"
 
 [tool.poetry.extras]
