@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "pybgpranking"
+name = "pybgpranking2"
 version = "2.0.2"
 description = "Python CLI and module for BGP Ranking"
 authors = ["Raphaël Vinot <raphael.vinot@circl.lu>"]

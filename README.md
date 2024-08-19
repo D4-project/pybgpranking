@@ -5,7 +5,7 @@ THis project will make querying BGP Ranking easier.
 ## Installation
 
 ```bash
-pip install pybgpranking
+pip install pybgpranking2
 ```
 
 ## Usage
@@ -15,6 +15,19 @@ pip install pybgpranking
 You can use the `bgpranking` command to query the instance:
 
 ```bash
+bgpranking -h
+usage: bgpranking [-h] [--url URL] [--date DATE] {index,simple,status} ...
+
+Run a query against BGP Ranking
+
+options:
+  -h, --help            show this help message and exit
+  --url URL             URL of the instance.
+  --date DATE           Date of the dataset required
+
+Available commands:
+  {index,simple,status}
+
 ```
 
 ### Library
