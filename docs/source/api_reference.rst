@@ -4,7 +4,7 @@ API reference
 .. toctree::
    :maxdepth: 2
 
-.. automodule:: pybgpranking
+.. automodule:: pybgpranking2
    :members:
 
 PyBGPRanking
