@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+from __future__ import annotations
+
 from datetime import date
-from typing import Dict, Union, Any
+from typing import Any
 from urllib.parse import urljoin, urlparse
 
 import requests
@@ -29,20 +31,20 @@ class PyBGPRanking():
         r = self.session.head(self.root_url)
         return r.status_code == 200
 
-    def redis_up(self) -> Dict:
+    def redis_up(self) -> dict[str, Any]:
         '''Check if redis is up and running'''
         r = self.session.get(urljoin(self.root_url, 'redis_up'))
         return r.json()
 
-    def query(self, asn: str, address_family: str='v4', date: str=None,
-              source: Union[list, str]=''):
+    def query(self, asn: str, address_family: str='v4', date: str | None=None,
+              source: list | str=''):
         '''Launch a query.
         :param asn: ASN to lookup
         :param address_family: v4 or v6
         :param date: Exact date to lookup. Fallback to most recent available.
         :param source: Source to query. Can be a list of sources.
         '''
-        to_query: Dict[str, Any] = {'asn': asn, 'address_family': address_family}
+        to_query: dict[str, Any] = {'asn': asn, 'address_family': address_family}
         if date:
             to_query['date'] = date
         if source:

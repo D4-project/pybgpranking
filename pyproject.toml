@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "pybgpranking2"
-version = "2.0.1"
+name = "pybgpranking"
+version = "2.0.2"
 description = "Python CLI and module for BGP Ranking"
 authors = ["Raphaël Vinot <raphael.vinot@circl.lu>"]
 license = "BSD-3-Clause"
@@ -19,26 +19,34 @@ classifiers = [
     'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
     'Topic :: Security',
     'Topic :: Internet',
 ]
-
-include = ['README.md']
 
 [tool.poetry.scripts]
 bgpranking = 'pybgpranking2:main'
 
 [tool.poetry.dependencies]
 python = "^3.8"
-requests = "^2.26.0"
-Sphinx = { version = "^4.3", optional = true }
-pyipasnhistory = "^2.1"
+requests = "^2.32.3"
+Sphinx = [
+    {version = "<7.2", python = "<3.9", optional = true},
+    {version = "^7.2", python = ">=3.9,<3.10", optional = true},
+    {version = "^8", python = ">=3.10", optional = true}
+]
+pyipasnhistory = "^2.1.2"
 
 [tool.poetry.dev-dependencies]
-mypy = "^0.931"
-types-requests = "^2.26.0"
-ipython = "^8.0.0"
-pytest = "^6.2.5"
+mypy = "^1.11.1"
+types-requests = "^2.32.0.20240712"
+ipython = [
+    {version = "<8.13.0", python = "<3.9"},
+    {version = "^8.18.0", python = ">=3.9"},
+    {version = "^8.19.0", python = ">=3.10"}
+]
+pytest = "^8.3.2"
 
 [tool.poetry.extras]
 docs = ["Sphinx"]
