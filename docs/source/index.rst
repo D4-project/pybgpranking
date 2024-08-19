@@ -6,9 +6,7 @@
 Welcome to PyBGPRanking's documentation!
 =============================================
 
-This is the client API for `PyBGPRanking <https://github.com/D4-project/pybgpranking>`_:
-
-  foo
+This is the client API for `BGP Ranking <https://github.com/D4-project/BGP-Ranking/>`_
 
 
 Installation
@@ -16,7 +14,7 @@ Installation
 
 The package is available on PyPi, so you can install it with::
 
-  pip install pybgpranking
+  pip install pybgpranking2
 
 
 Usage
